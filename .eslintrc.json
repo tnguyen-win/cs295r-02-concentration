@@ -1,0 +1,45 @@
+{
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "env": {
+        "browser": true,
+        "es2023": true
+    },
+    "extends": [
+        "standard",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+        // Prevent ESLint error - 'React' must be in scope when using JSX (I want to only import the Component module, not all of React)
+        "react/react-in-jsx-scope": "off",
+        "react/prop-types": "off",
+        //
+        "space-before-function-paren": "off",
+        "no-tabs": "warn",
+        "indent": [
+            "warn",
+            4
+        ],
+        "quotes": [
+            "warn",
+            "single"
+        ],
+        "semi": [
+            "warn",
+            "always"
+        ],
+        "no-array-constructor": "warn",
+        "eqeqeq": "warn",
+        "no-console": "warn"
+    }
+}
